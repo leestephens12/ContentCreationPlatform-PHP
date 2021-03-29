@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+<html>
     <head>
         <meta charset="UTF-8">
         <title>User Log-In</title>
-        <link href="css/registration.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <header>
@@ -22,7 +23,7 @@
                 <p id="wrongPass"></p>
             </div>
             <div class="buttons">
-                <input type="submit" Value="Submit">
+                <input id="submit" type="submit" Value="Submit">
                 <button><a href="register.php">Register</a></button>
             </div>
         </form>
@@ -48,7 +49,7 @@
     //if the variable is passed that the user just registered their account give them a greeting message and redirect them to logging in
     if(!empty($_GET['register'])) {
         echo('<script>
-                alert("Your account has been created succesfully. Now login ot begin");
+                alert("Your account has been created succesfully. Now login to begin");
             </script>');
     }
 ?>

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+<html>
     <head>
         <meta charset="UTF-8">
         <title>User Registration</title>
-        <link rel="stylesheet" href="css/registration.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <header>
@@ -31,7 +32,7 @@
             <p id="emailExists"></p>
         </div>
 
-            <input type="submit" Value="Submit">
+            <input id="submit" type="submit" Value="Submit">
             <button><a href="login.php">Back</a></button>
 <?php
     //if the username input alreayd exists leave warning message and style it red

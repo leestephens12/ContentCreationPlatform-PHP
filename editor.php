@@ -1,14 +1,17 @@
 <!DOCTYPE html>
+<html>
     <head>
         <meta charset="UTF-8">
         <title>Editor +</title>
         <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/editor.css">
     </head>
     <body>
     <!--header and my log out so it will terminate users session-->
     <header>
         <a href="logout.php">Log Out</a>
     </header>
+    <main>
 <?php
     //because i stored my username in a session start variable i am able to retrive and use it to greeet customer
     session_start();
@@ -44,7 +47,8 @@
     //dsiconnect db
     $db = null;
 ?>
-        <!--button allows you to go to add page file-->
-        <button><a href="addPage.php">Add Page</a></button>
+            <!--button allows you to go to add page file-->
+            <button><a href="addPage.php">Add Page</a></button>
+        </main>
     </body>
 </html>
